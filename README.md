@@ -1,6 +1,6 @@
 # countDown.js 倒數計時器
 
-一個輕量化的倒數計時器，不需使用任何套件即可使用，引入 `countDown.js` 或 `countDown.min.js` 加上簡單的 `class` 以及 `dataset` 即可開始倒數計時。
+一個輕量化的倒數計時器，不需使用任何套件即可使用，引入 `dist` 內的 `countDown.js` 或 `countDown.min.js` 加上簡單的 `class` 以及 `dataset` 即可開始倒數計時。
 
 適合商品上架或到期的倒數計時器。
 

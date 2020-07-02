@@ -1,9 +1,41 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="zh-Hant-TW" dir="ltr">
     <head>
         <meta charset="utf-8">
         <title>countDown Demo</title>
-        <link rel="stylesheet" href="index.css">
+        <style>
+            @font-face {
+                font-family: Digifaw;
+                src: url(./font/digifaw.ttf);
+            }
+
+            body{
+                font-family: Microsoft JhengHei, Heiti TC,WenQuanYi Zen Hei, Arial;
+                background-color: #242424;
+            }
+
+            .time_block{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                width: 100%;
+                font-weight: bold;
+                text-align: center;
+                color: #00b60a;
+            }
+
+            .time_date, .time_hour, .time_min, .time_sec{
+                display: inline-block;
+                background-image: linear-gradient(90deg, #000, #505050 50%, #010101);
+                border-radius: 5px;
+                padding: 10px;
+                margin-left: 10px;
+                margin-right: 6px;
+                font-size: 1.6em;
+                font-family: Digifaw;
+            }
+        </style>
     </head>
     <body>
         <div class="time_block" data-endtime="2020-12-31T00:00:00+08:00">
@@ -13,6 +45,6 @@
             <span class="time_sec"></span>秒
         </div>
 
-        <script src="countDown.min.js"></script>
+        <script src="./dist/countDown.min.js"></script>
     </body>
 </html>
